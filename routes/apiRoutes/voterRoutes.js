@@ -13,12 +13,11 @@ router.get('/voters', (req, res) => {
         }
         res.json({
             message: 'success',
-            data: rows,
+            data: rows
         });
     });
 });
 
-module.exports = router;
 
 // Get single voter
 router.get('/voter/:id', (req, res) => {
@@ -106,3 +105,5 @@ router.delete('/voter/:id', (req, res) => {
         }
     });
 });
+
+module.exports = router;
